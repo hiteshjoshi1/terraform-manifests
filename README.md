@@ -49,6 +49,12 @@ https://registry.terraform.io/modules/terraform-aws-modules/eks/aws/11.0.0
 aws eks --region ap-southeast-1 update-kubeconfig --name training-eks-FtqucHDy
 ```
 
+Alternatively, 
+```
+mkdir ~/.kube/
+terraform output kubeconfig>~/.kube/config
+```
+
 7. Bring the cluster down
 
 ```
